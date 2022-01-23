@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_navig"
+    app:startDestination="@id/homeFragment">
+
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="Fragment.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_minutFragment2"
+            app:destination="@id/minutFragment2"
+            app:enterAnim="@anim/enter_anim"
+            app:exitAnim="@anim/exit_anim"
+            app:popEnterAnim="@anim/pop_enter_anim"
+            app:popExitAnim="@anim/pop_exit_anim" />
+        <action
+            android:id="@+id/action_homeFragment_to_tarifFragment"
+            app:destination="@id/tarifFragment"
+            app:enterAnim="@anim/enter_anim"
+            app:exitAnim="@anim/exit_anim"
+            app:popEnterAnim="@anim/pop_enter_anim"
+            app:popExitAnim="@anim/pop_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/minutFragment2"
+        android:name="Fragment.MinutFragment"
+        android:label="fragment_minut"
+        tools:layout="@layout/fragment_minut" >
+        <action
+            android:id="@+id/action_minutFragment2_to_minutInfo2"
+            app:destination="@id/minutInfo2"
+            app:enterAnim="@anim/enter_anim"
+            app:exitAnim="@anim/exit_anim"
+            app:popEnterAnim="@anim/pop_enter_anim"
+            app:popExitAnim="@anim/pop_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/tarifFragment"
+        android:name="Fragment.TarifFragment"
+        android:label="fragment_tarif"
+        tools:layout="@layout/fragment_tarif" >
+        <action
+            android:id="@+id/action_tarifFragment_to_tarifInfo"
+            app:destination="@id/tarifInfo"
+            app:enterAnim="@anim/enter_anim"
+            app:exitAnim="@anim/exit_anim"
+            app:popEnterAnim="@anim/pop_enter_anim"
+            app:popExitAnim="@anim/pop_exit_anim" />
+        <action
+            android:id="@+id/action_tarifFragment_to_tarifInfo2"
+            app:destination="@id/tarifInfo"
+            app:enterAnim="@anim/enter_anim"
+            app:exitAnim="@anim/exit_anim"
+            app:popEnterAnim="@anim/pop_enter_anim"
+            app:popExitAnim="@anim/pop_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/minutInfo2"
+        android:name="Fragment.MinutInfo"
+        android:label="fragment_minut_info"
+        tools:layout="@layout/fragment_minut_info" />
+    <fragment
+        android:id="@+id/tarifInfo"
+        android:name="Fragment.TarifInfo"
+        android:label="fragment_tarif_info"
+        tools:layout="@layout/fragment_tarif_info" />
+</navigation>

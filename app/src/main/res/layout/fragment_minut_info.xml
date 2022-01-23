@@ -1,0 +1,59 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/size_30dp"
+    android:orientation="vertical"
+    tools:context="Fragment.MinutInfo">
+    <TextView
+        android:id="@+id/minutNameInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/red"
+        android:layout_marginHorizontal="@dimen/size_10dp"
+        android:text="@string/hello_blank_fragment"
+        android:textSize="40sp"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:id="@+id/minutDescInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/size_10dp"
+        android:text="@string/hello_blank_fragment"
+        android:textSize="@dimen/text_25sp" />
+    <TextView
+        android:id="@+id/tarifCodeMinut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="italic"
+        android:layout_marginHorizontal="@dimen/size_10dp"
+        android:text="@string/hello_blank_fragment"
+        android:textSize="@dimen/text_25sp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+<!--            <ImageView-->
+<!--                android:id="@+id/img_call2"-->
+<!--                android:layout_width="150dp"-->
+<!--                android:layout_height="150dp"-->
+<!--                android:layout_alignParentBottom="true"-->
+<!--                android:layout_alignParentRight="true"-->
+<!--                android:layout_alignParentLeft="true"-->
+<!--                android:src="@drawable/call"-->
+<!--                />-->
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
